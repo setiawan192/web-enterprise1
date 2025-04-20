@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Profiler</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
+
+  <div class="container" data-aos="fade-up">
+    <div class="profile-header">
+      <img src="https://lh3.googleusercontent.com/a/ACg8ocLIKNommjaQ0AUOyNe-7Ei6sohumcHVbtOHDIc8Trx4ywgbGFa5=s360-c-no" alt="Foto Profil" class="profile-img" />
+      <h1>Ardian Setiawan</h1>
+      <h2>Web Developer | UI/UX Designer</h2>
+      <p>Saya seorang pengembang web dengan fokus pada antarmuka yang bersih dan fungsional. Menggabungkan estetika dan performa dengan teknologi terbaru untuk menciptakan pengalaman pengguna yang optimal.</p>
+    </div>
+
+    <!-- Keterampilan -->
+    <section class="section" data-aos="fade-right">
+      <h3>🛠️ Keterampilan</h3>
+      <ul class="skills">
+        <li>HTML, CSS, JavaScript</li>
+        <li>React, Vue.js, Next.js</li>
+        <li>Node.js, Express</li>
+        <li>Figma, Adobe XD, Sketch</li>
+        <li>Git & GitHub, Version Control</li>
+        <li>Responsive Web Design</li>
+        <li>API Integration (REST & GraphQL)</li>
+        <li>Testing: Jest, Mocha</li>
+      </ul>
+    </section>
+
+    <!-- Pengalaman -->
+    <section class="section" data-aos="fade-left">
+      <h3>💼 Pengalaman</h3>
+      <div class="experience">
+        <h4>PT. Teknologi Kreatif - Front-End Developer</h4>
+        <p>React, SCSS, dan API integration (2022 - Sekarang)</p>
+        <ul>
+          <li>Pengembangan aplikasi web menggunakan React dan Redux.</li>
+          <li>Integrasi API untuk mengambil dan menampilkan data dinamis.</li>
+          <li>Optimalisasi kinerja dan memastikan tampilan yang responsif di berbagai perangkat.</li>
+        </ul>
+
+        <h4>Freelancer - UI Designer & Web Developer</h4>
+        <p>Figma, Prototyping, UX Audit, Front-End Development (2020 - 2022)</p>
+        <ul>
+          <li>Mendesain antarmuka pengguna (UI) untuk berbagai aplikasi web dan mobile.</li>
+          <li>Mengembangkan prototipe interaktif untuk aplikasi dan situs web.</li>
+          <li>Melakukan audit UX untuk meningkatkan pengalaman pengguna di produk klien.</li>
+          <li>Pengembangan front-end menggunakan HTML, CSS, dan JavaScript.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Pendidikan -->
+    <section class="section" data-aos="fade-up">
+      <h3>🎓 Pendidikan</h3>
+      <div class="education">
+        <h4>Universitas Teknologi Jakarta - S1 Teknik Informatika</h4>
+        <p>2023 - 2027</p>
+        <ul>
+          <li>Mendalami berbagai bahasa pemrograman seperti Java, Python, dan JavaScript.</li>
+          <li>Proyek akhir tentang pengembangan aplikasi web berbasis React.</li>
+          <li>Memperoleh pemahaman mendalam mengenai algoritma dan struktur data.</li>
+        </ul>
+
+        <h4>SMK Yadika 3 Jakarta Barat - Teknik Komputer dan Jaringan</h4>
+        <p>2014 - 2017</p>
+        <ul>
+          <li>Pemrograman dasar, pengelolaan jaringan komputer, dan perakitan hardware komputer.</li>
+          <li>Pendidikan dasar tentang pengembangan perangkat lunak dan teknologi informasi.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Proyek -->
+    <section class="section" data-aos="zoom-in">
+      <h3>🚀 Proyek</h3>
+      <ul class="projects">
+        <li>Portofolio Website</li>
+        <p>Mengembangkan situs web portofolio untuk menunjukkan keahlian dan proyek-proyek sebelumnya.</p>
+
+        <li>Sistem Booking Online</li>
+        <p>Sistem pemesanan tiket online untuk acara dan tempat wisata menggunakan React dan Node.js.</p>
+
+        <li>UI Kit Komponen (Figma)</li>
+        <p>Mendesain dan mengembangkan UI Kit yang dapat digunakan kembali untuk aplikasi web.</p>
+
+        <li>Blog Platform</li>
+        <p>Platform blog menggunakan React dan GraphQL untuk manajemen konten yang fleksibel.</p>
+
+        <li>Dashboard Analitik</li>
+        <p>Mengembangkan dashboard analitik untuk visualisasi data dengan grafik dinamis menggunakan D3.js dan Chart.js.</p>
+      </ul>
+    </section>
+
+    <!-- Kontak -->
+    <section class="section" data-aos="zoom-in">
+      <h3>📬 Kontak</h3>
+      <div class="socials">
+        <a href="mailto:bisnisardianoffic20@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://www.linkedin.com/in/ardian-setiawan-0aabb2330/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/ardian200" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.youtube.com/@ardiangeming" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    function toggleTheme() {
+      document.body.classList.toggle("dark-mode");
+      const icon = document.querySelector(".theme-toggle");
+      icon.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+    }
+  </script>
+</body>
+</html>
